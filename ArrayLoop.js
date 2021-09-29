@@ -36,6 +36,16 @@ console.log(newQueue)
 
 // #Exercise 2
 
+let star = "";
+let i = "";
+for (let i = 1; i <= 5; i++) {
+    var output = "";
+    for (j=i; j<=i; j++){
+        output += "* ";
+    }
+  console.log(output);
+}
+
 for (let i = 1; i <= 5; i++) {
     var output = "";
     for (j=1; j<=i; j++){
@@ -43,6 +53,7 @@ for (let i = 1; i <= 5; i++) {
     }
   console.log(output);
 }
+
 // #Exercise 3a
 
 let a = 10;
