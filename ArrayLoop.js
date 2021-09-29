@@ -5,17 +5,44 @@ names.push("Sara", "Augustin");
 names.shift();
 console.log(names);
 
+// const newNames = [...names.slice(0,1), ...names.slice(2,0)]
+
 names.splice(1, 0, "Renata");
 names.push("Elena");
 console.log(names);
 
+// #Hugo Ver
+//Ex1 part1
+const queue = ['Sofia', 'David', 'Juan']
+console.log(queue)
+//Ex1 part2
+queue.push('Sara')
+queue.push('Augustin')
+queue.shift()
+console.log(queue)
+//Bonus
+// const newQueue = [...queue.slice(0,1), ...queue.slice(2, 4)]
+// console.log(newQueue)
+
+// Ex1 part3
+//Array.prototype.splice()
+//... spread operator
+queue.push('Elena')
+
+const newQueue = [ queue[0], 'Renata', ...queue.slice(1)]
+console.log(newQueue)
+
+
+
 // #Exercise 2
 
-let star = "";
 for (let i = 1; i <= 5; i++) {
-  console.log((star += "* "));
+    var output = "";
+    for (j=1; j<=i; j++){
+        output += "* ";
+    }
+  console.log(output);
 }
-
 // #Exercise 3a
 
 let a = 10;
